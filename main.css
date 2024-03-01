@@ -1,0 +1,85 @@
+body,
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    max-width: 25ch;
+    line-height: 1.5;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Media queries for tablet and phone */
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+        max-width: 30ch;
+    }
+    
+    .grid-container {
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+      font-size: 0.8rem;
+      max-width: 35ch;
+  }
+  
+  .grid-container {
+      margin: 3rem 5%; /* Equal margin on both sides */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-item {
+      margin: 5px; /* Adjusted margin for mobile */
+      height: 80px; /* Adjusted height for mobile */
+  }
+}
+
