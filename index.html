@@ -10,24 +10,29 @@
 </head>
 <body>
     <main>
-        <div class="title">あっちむいてほい (Atchi Muite Hoi) is a Japanese hand game where two players simultaneously point in different directions and call out directions to make the opponent look that way. It's a simple and playful game often enjoyed for its blend of strategy and luck.</div>
+<div class="arrow up" onclick="changeImages('up')">↑</div>
+<div class="arrow down" onclick="changeImages('down')">↓</div>
+<div class="arrow left" onclick="changeImages('left')">←</div>
+<div class="arrow right" onclick="changeImages('right')">→</div>
 
-      </div>
+<main>
+    <div class="title">あっちむいてほい (Atchi Muite Hoi) is a Japanese hand game where two players simultaneously point in different directions and call out directions to make the opponent look that way. It's a simple and playful game often enjoyed for its blend of strategy and luck.</div>
+    <audio id="myAudio" src="moespeak.mp3" preload="auto" loop></audio>
 
-      
-        <div class="grid-container" id="imageGrid">
-            <div class="grid-item"><img src="front1.png" alt="Image 1"></div>
-            <div class="grid-item"><img src="front2.png" alt="Image 2"></div>
-            <div class="grid-item"><img src="front3.png" alt="Image 3"></div>
-            <div class="grid-item"><img src="front4.png" alt="Image 4"></div>
-            <div class="grid-item"><img src="front5.png" alt="Image 5"></div>
-            <div class="grid-item"><img src="front6.png" alt="Image 6"></div>
-            <div class="grid-item"><img src="front7.png" alt="Image 7"></div>
-            <div class="grid-item"><img src="front8.png" alt="Image 8"></div>
-            <div class="grid-item"><img src="front9.png" alt="Image 9"></div>
-        </div>
-    </main>
-    <audio id="myAudio" src="moespeak.m4a" preload="auto" loop></audio>
+    <div class="grid-container" id="imageGrid">
+        <div class="grid-item"><img src="front1.png" alt="Image 1"></div>
+        <div class="grid-item"><img src="front2.png" alt="Image 2"></div>
+        <div class="grid-item"><img src="front3.png" alt="Image 3"></div>
+        <div class="grid-item"><img src="front4.png" alt="Image 4"></div>
+        <div class="grid-item"><img src="front5.png" alt="Image 5"></div>
+        <div class="grid-item"><img src="front6.png" alt="Image 6"></div>
+        <div class="grid-item"><img src="front7.png" alt="Image 7"></div>
+        <div class="grid-item"><img src="front8.png" alt="Image 8"></div>
+        <div class="grid-item"><img src="front9.png" alt="Image 9"></div>
+    </div>
     <script src="script.js"></script>
+
+</main>
+
 </body>
 </html>
